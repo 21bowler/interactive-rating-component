@@ -1,0 +1,136 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Orange: hsl(25, 97%, 53%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --font-family: 'Overpass', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Grey);
+    font-family: var(--font-family);
+}
+
+.container{
+    background: var(--Dark-Blue);
+    width: 350px;
+    padding: 20px 25px;
+    border-radius: 20px;
+}
+
+.container img{
+    background-color: #333742;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+/* H1(heading one styling */
+
+h1{
+    margin-bottom: 10px;
+    color: var(--White);
+}
+
+/* container paragraph styling */
+.container > p{
+    line-height: 1.5rem;
+}
+
+
+/* circle container styling */
+.circle-container{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5px; */
+    padding: 10px 0;
+    margin: 10px 0 20px 0;
+}
+.circle{
+    background-color: #333742;
+    padding: 15px 19px;  /*note: This centers the number inside*/
+    border-radius: 50%;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+
+.circle:hover{
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+.circle:active{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    cursor: pointer;
+}
+
+/* Added in js for the selected number div */
+.selected {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+
+/* Submit  button styling */
+button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 18px;
+    text-transform: uppercase;
+    background-color: var(--Orange);
+    color: var(--White);
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/* Second container(Thank You) styling */
+
+.container-thankyou{
+    display: none;
+    background: var(--Dark-Blue);
+    width: 350px;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 12px;
+}
+
+.container-thankyou img{
+    margin: 20px 0;
+}
+
+.rating{
+    color: var(--Orange);
+    background: #333742;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* heading 2 styling */
+h2{
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.appreciate{
+    line-height: 1.4rem;
+}
